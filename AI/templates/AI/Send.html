@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    ゲーム開始
+{% endblock %}
+
+{% block content %}
+
+    {% include Constants.instructions_template %}
+
+    <p>
+    あなたは{{Constants.endowment}}持っています。
+    </p>
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% endblock %}

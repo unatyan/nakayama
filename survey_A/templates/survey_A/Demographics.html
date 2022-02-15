@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    アンケート
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        あなたの性格についてお聞きします。当てはまるものを選択してください。（1：全く違うと思う ～ 7：強くそう思う）
+    </p>
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% endblock %}

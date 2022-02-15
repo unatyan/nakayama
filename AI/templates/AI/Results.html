@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    結果
+{% endblock %}
+
+{% block content %}
+
+{% if player.id_in_group == 1 %}
+{% endif %}
+
+    <p>
+    あなたはコンピュータに<b><font color="red">{{ player.sent_amount }}</font></b>送りました。コンピュータは<b><font color="red">{{ sent_back_amount }}</font></b>送り返してきました。
+    </p>
+
+    {% include Constants.instructions_template %}
+
+    {% next_button %}
+
+{% endblock %}
